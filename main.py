@@ -22,4 +22,8 @@ disciplinas = {
     "AEX0162":["Gerencia de Projetos", "6N1234"],
     "AEX0163":["Sistemas Operacionais", "4N12", "5N34"],
     "AEX0171":["Tecnologia e Sociedade", "3N12", "5N34"],
+    "AEX0172":["Aspectos Filosóficos e Sociológicos de Informática", "35N34"],
+    "AEX0184":["Infraestrutura de Hardware", "3N34", "5N12"],
+    "AEX0185":["Paradigmas de Programação", "4T2345"],
+    "AEX0187":["Aprendizado de Máquina", "5T2345"]
 }
