@@ -4,6 +4,7 @@ import os
 
 '''
 Essas displinas são as que estão presentes no Excel que está disponivel para ser vizualizado/baixado na pasta 'arquivo_base' (coloquei apenas algumas matérias). Essas serão às matérias que o usuário podera se matricular.
+
 '''
 
 disciplinas = {
@@ -27,3 +28,45 @@ disciplinas = {
     "AEX0185":["Paradigmas de Programação", "4T2345"],
     "AEX0187":["Aprendizado de Máquina", "5T2345"]
 }
+
+
+'''
+Dicionário que guadará as disciplinas que o úsuario escolher, junto com os seus turnos e código
+'''
+escolhas = {}
+
+
+def menu_principal():
+    os.system('clear || cls')
+    print("-----------------------------------------------------")
+    print("| SISTEMA DE MÁTRICULAS EM DISCIPLINAS CURRICULARES |")
+    print("|                 SEJA BEM VINDO(A)                 |")
+    print("|                                                   |")
+    print("|                 1 - MATRICULAR-SE                 |")
+    print("|                 2 - EXIBIR DISCIPLINAS            |")
+    print("|                 3 - ALTERAR DISCIPLINA            |")
+    print("|                 4 - EXCLUIR DISCIPLINA            |")
+    print("|                 0 - SAIR                          |")
+    print("-----------------------------------------------------")
+    print()
+    op_principal = input("| Escolha uma opção: ")
+    return op_principal
+
+
+def matricula():
+    os.system('clear || cls')
+
+
+
+
+
+
+# Programa Principal:
+
+op_principal = ""
+
+while op_principal != "0":
+    op_principal = menu_principal()
+    print()
+    if op_principal == "1":
+        pass
