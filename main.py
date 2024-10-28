@@ -1,6 +1,7 @@
 ''' Imports '''
 
 import os
+import time
 
 '''
 Essas displinas são as que estão presentes no Excel que está disponivel para ser vizualizado/baixado na pasta 'arquivo_base' (coloquei apenas algumas matérias). Essas serão às matérias que o usuário podera se matricular.
@@ -56,6 +57,20 @@ def menu_principal():
 
 def matricula():
     os.system('clear || cls')
+    print("----------------------------------------------------")
+    print("|  REALIZAR MATRÍCULA EM DISCIPLINAS CURRICULARES  |")
+    print("|                 ENTER - CONTINUAR                |")
+    print("|                 0 - PARA CANCELAR                |")
+    print("----------------------------------------------------")
+    print()
+    resp = input("| ESCOLHA SUA OPÇÃO: ")
+    print()
+    if resp == "0":
+        return
+    print("| ENTRANDO NA ÁREA DE LOGIN :) ...")
+    print()
+    time.sleep(2)
+    os.system('clear || cls')
     print("-------------------------------------------------------------------------------------------")
     print("|     CÓDIGO    |                        DISCIPLINA                       |   TURNO/DIA   |")
     print("-------------------------------------------------------------------------------------------")
@@ -85,6 +100,8 @@ def matricula():
     print("|    AEX0185    |                  Paradigmas de Programação              |     4T2345    |")
     print("|    AEX0187    |                   Aprendizado de Máquina                |     5T2345    |")
     print("-------------------------------------------------------------------------------------------")
+    print()
+    input("tecle <ENTER> para retornar...")
 
 
 
