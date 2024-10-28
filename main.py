@@ -88,6 +88,41 @@ def matricula():
 
 
 
+def exibir_disciplinas():
+    os.system('clear || cls')
+    print("-------------------------------------------------------------------------------------------")
+    print("|     CÓDIGO    |                        DISCIPLINA                       |   TURNO/DIA   |")
+    print("-------------------------------------------------------------------------------------------")
+    print("|    AAS0050    |                Análise e Expressão Textual              |     35N34     |")
+    print("|    AAS0178    |                         Sociologia                      |     24N34     |")
+    print("|    AAS0700    |                           Libras                        |     24N34     |")
+    print("|    AEX0064    |                    Teoria da Computação                 |     2N1234    |")
+    print("|    AEX0102    |                         Calculo II                      |     24N12     |")
+    print("|    AEX0106    |                  Engenharia de Requisitos               |     24N12     |")
+    print("|    AEX0149    |     Introdução a computação e Sistemas de Informação    |     35N12     |")
+    print("|    AEX0152    |             Princípios de Engenharia de Software        |     4N1234    |")
+    print("|    AEX0153    |                Logica e Matemática Discreta             |     24N34     |")
+    print("|               |                                                         |               |")
+    print("|    AEX0157    |               Fundamentos de Banco de Dados             |     24N34     |")
+    print("|               |                                                         |     5N12      |")
+    print("|               |                                                         |               |")
+    print("|    AEX0158    |                Algoritmos e Programação III             |     24N34     |")
+    print("|               |                                                         |               |")
+    print("|    AEX0159    |                Analise e Projeto de Sistemas            |     3N12      |")
+    print("|               |                                                         |     5N34      |")
+    print("|               |                                                         |               |")
+    print("|    AEX0162    |                    Gerencia de Projetos                 |     6N1234    |")
+    print("|    AEX0163    |                    Sistemas Operacionais                |     24N34     |")
+    print("|    AEX0171    |                    Tecnologia e Sociedade               |     3N12      |")
+    print("|    AEX0172    |    Aspectos Filosóficos e Sociológicos de Informática   |     24N34     |")
+    print("|    AEX0184    |                  Infraestrutura de Hardware             |     3N34      |")
+    print("|    AEX0185    |                  Paradigmas de Programação              |     4T2345    |")
+    print("|    AEX0187    |                   Aprendizado de Máquina                |     5T2345    |")
+    print("-------------------------------------------------------------------------------------------")
+    print()
+    input("tecle <ENTER> para retornar...")
+
+
 
 
 
@@ -112,3 +147,5 @@ while op_principal != "0":
     print()
     if op_principal == "1":
         matricula()
+    elif op_principal == "2":
+        exibir_disciplinas()
