@@ -168,7 +168,20 @@ def exibir_disciplinas():
     input("tecle <ENTER> para retornar...")
 
 
-
+def alterar_disciplina():
+    pass
+    # os.system('clear || cls')
+    # print("----------------------------------------------------")
+    # print("|                ALTERAR DISCIPLINAS               |")
+    # print("|                 ENTER - CONTINUAR                |")
+    # print("|                 0 - PARA CANCELAR                |")
+    # print("----------------------------------------------------")
+    # print()
+    # resp = input("| ESCOLHA SUA OPÇÃO: ")
+    # print()
+    # if resp == "0":
+    #     return
+    # print()
 
 
 
