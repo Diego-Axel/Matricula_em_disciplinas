@@ -1,4 +1,4 @@
-# sistema_matriculas.py
+import os
 
 # Dicionário de disciplinas disponíveis
 disciplinas = {
@@ -26,7 +26,9 @@ disciplinas = {
 # Lista de disciplinas matriculadas pelo aluno
 disciplinas_matriculadas = []
 
+
 def exibir_menu():
+    os.system('clear || cls')
     print("-----------------------------------------------------")
     print("| SISTEMA DE MATRÍCULAS EM DISCIPLINAS CURRICULARES |")
     print("|                 SEJA BEM-VINDO(A)                 |")
@@ -36,15 +38,18 @@ def exibir_menu():
     print("|  3 - ALTERAR DISCIPLINA MATRICULADA               |")
     print("|  4 - EXCLUIR DISCIPLINA MATRICULADA               |")
     print("|  5 - MINHAS DISCIPLINAS MATRICULADAS              |")
-    print("|  0 - SAIR                                          |")
+    print("|  0 - SAIR                                         |")
     print("-----------------------------------------------------")
     return input("Escolha uma opção: ")
 
+
 def exibir_disciplinas(dados):
+    os.system('clear || cls')
     print("\nLISTA DE DISCIPLINAS:")
     for codigo, detalhes in dados.items():
         print(f"{codigo} - {detalhes[0]} ({', '.join(detalhes[1:])})")
     print()
+
 
 def matricular():
     exibir_disciplinas(disciplinas)
@@ -58,7 +63,9 @@ def matricular():
         disciplinas_matriculadas.append(codigo)
         print("✅ Matrícula realizada com sucesso!")
 
+
 def alterar_disciplina():
+    os.system('clear || cls')
     if not disciplinas_matriculadas:
         print("⚠️ Você ainda não está matriculado em nenhuma disciplina.")
         return
@@ -85,7 +92,9 @@ def alterar_disciplina():
     except ValueError:
         print("❌ Entrada inválida.")
 
+
 def excluir_disciplina():
+    os.system('clear || cls')
     if not disciplinas_matriculadas:
         print("⚠️ Nenhuma disciplina matriculada.")
         return
@@ -104,7 +113,9 @@ def excluir_disciplina():
     except ValueError:
         print("❌ Entrada inválida.")
 
+
 def minhas_disciplinas():
+    os.system('clear || cls')
     if not disciplinas_matriculadas:
         print("⚠️ Você não está matriculado em nenhuma disciplina.")
     else:
@@ -113,26 +124,24 @@ def minhas_disciplinas():
             print(f"{codigo} - {disciplinas[codigo][0]} ({', '.join(disciplinas[codigo][1:])})")
         print()
 
-def main():
-    while True:
-        opcao = exibir_menu()
-        if opcao == '1':
-            matricular()
-        elif opcao == '2':
-            exibir_disciplinas(disciplinas)
-        elif opcao == '3':
-            alterar_disciplina()
-        elif opcao == '4':
-            excluir_disciplina()
-        elif opcao == '5':
-            minhas_disciplinas()
-        elif opcao == '0':
-            print("👋 Saindo... Até logo!")
-            break
-        else:
-            print("❌ Opção inválida. Tente novamente.")
 
-        input("\nPressione Enter para continuar...\n")
-
-if __name__ == "__main__":
-    main()
+verificador = True
+while verificador:
+    opcao = exibir_menu()
+    if opcao == '1':
+        matricular()
+    elif opcao == '2':
+        exibir_disciplinas(disciplinas)
+    elif opcao == '3':
+        alterar_disciplina()
+    elif opcao == '4':
+        excluir_disciplina()
+    elif opcao == '5':
+        minhas_disciplinas()
+    elif opcao == '0':
+        print("👋 Saindo... Até logo!")
+        verificador = False
+    else:
+        print("❌ Opção inválida. Tente novamente.")
+        print()
+    input("Pressione Enter para continuar...")
