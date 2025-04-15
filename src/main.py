@@ -125,6 +125,8 @@ def minhas_disciplinas():
         print()
 
 
+#  Prograa Principal - main
+
 verificador = True
 while verificador:
     opcao = exibir_menu()
